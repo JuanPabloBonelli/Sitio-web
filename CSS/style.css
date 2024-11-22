@@ -371,8 +371,8 @@ margin-left: 70px;
     justify-content: center; 
     align-items: center; 
     height: 40vh;     
-    margin-top: -40px;   
-  }
+    margin-top: -40px; 
+}
 
   form {
     text-align: center;
@@ -383,6 +383,7 @@ margin-left: 70px;
     width: 60%; 
     padding: 10px; 
     box-sizing: border-box; 
+    border-radius: 5px;
     border: 1px solid black;
 }
 
@@ -391,6 +392,7 @@ form input[type="submit"] {
     padding: 5px 5px; 
     width: 10%;
     background-color: black;
+    border-radius: 5px;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;    
@@ -401,30 +403,77 @@ form input[type="submit"]:hover {
     color: black;
 }
 
- /* Medida para celulares (hasta 768px) */
- @media (max-width: 768px) {
-    form input,
-    form textarea {
-        width: 80%; 
-    }
-    
-    form input[type="submit"] {
-        width: 30%; 
-    }
- }
+ /* Footer fnal */
 
- /* Medida para tablet (768px a 1024px) */
+.footer-fin ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+    background-color: black; 
+    padding: 15px 0; 
+  }
+  
+  .footer-fin ul li {
+    margin: 0 15px; 
+  }
+  
+  .footer-fin ul li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 16px; 
+    padding: 10px 15px; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .footer-fin ul li a:hover {
+    background-color: #555; 
+    border-radius: 5px; 
+  }
+
+  
+    .footer-fin ul .izq-barra, 
+    .footer-fin ul .der-barra {
+    font-size: 16px; 
+    color: white; 
+    padding: 0px;
+    font-weight: bold;
+    cursor: pointer; 
+    transition: color 0.3s ease;
+  }
+
+    .footer-fin ul .izq-barra:hover, 
+    .footer-fin ul .der-barra:hover {
+    color: grey; 
+  }
+
+/* Medida para tablet (768px a 1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
-    form input,
-    form textarea {
-        width: 75%; 
+    .footer-fin ul {
+      flex-direction: column; 
+      text-align: center;
     }
-    
-    form input[type="submit"] {
-        width: 20%; 
+  
+    .footer-fin ul li {
+      margin: 10px 0; 
+    }
+  
+    .footer-fin ul .izq-barra,
+    .footer-fin ul .der-barra {
+      margin-bottom: 10px; 
+    }
+  }
+  
+  /* Medida para celulares */
+  @media (max-width: 768px) {
+    .footer-fin ul {
+      font-size: 14px; 
+      flex-direction: column; 
+      text-align: center;
     }
 }
-
+  
   /* FIN FORMULARIO */
 
 
