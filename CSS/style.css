@@ -456,7 +456,7 @@ form input[type="submit"]:hover {
     .footer-fin ul .der-barra:hover {
     color: grey; 
   }
-
+  
 /* Medida para tablet (768px a 1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
     .footer-fin ul {
