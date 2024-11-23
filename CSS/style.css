@@ -3,11 +3,20 @@
     padding: 0;
 }
 
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif !important; /* Aplica Poppins a todo el documento */
 }
+
+
+.dark {
+    background-color: #635f5f;
+    color: white;
+    transition: all 1s ease;
+}
+
 
 .navbar {
     background-color: white; /* Cambia el color de fondo de la barra de navegación */
