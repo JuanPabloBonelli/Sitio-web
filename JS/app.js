@@ -49,3 +49,15 @@ cards.forEach(card => {
   });
 });
 
+// Boton para subir
+const boton_up = document.getElementById("boton_up")
+boton_up.addEventListener('click', () => {
+    window.scrollTo(0, 0);
+})
+
+window.onscroll = () => {
+    if (window.scrollY < 1000) {
+        boton_up.classList.remove("botonUpOn")        
+    }
+    else boton_up.classList.add("botonUpOn")
+}

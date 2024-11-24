@@ -17,6 +17,24 @@ body {
     transition: all 1s ease;
 }
 
+.botonUp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  background-color: #635f5f;
+  color: white;
+  border: 3px solid white ;
+  border-radius: 100%;
+  cursor: pointer;
+  transform: translateY(100px);
+  transition: 0.3s;
+}
+
+.botonUpOn {
+  transform: translateY(0px);
+}
+
 
 .navbar {
     background-color: white; /* Cambia el color de fondo de la barra de navegación */
